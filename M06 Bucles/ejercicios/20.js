@@ -7,11 +7,11 @@ function sumarHastaNConBreak(n) {
 
   for(var i = 1; i<= n; i++){
     sum += i;
-    if(sum > 100)break;
+    if( sum === 100 || sum > 100){
+      break
+    };
   }
   return sum;
-
-
-}
+  }
 
 module.exports = sumarHastaNConBreak;
